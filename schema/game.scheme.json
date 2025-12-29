@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HTML5 Game Metadata",
+  "type": "object",
+  "required": ["title", "description", "categories"],
+  "properties": {
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "categories": {
+      "type": "array",
+      "items": {
+        "enum": ["match-3", "puzzle", "arcade"]
+      }
+    }
+  }
+}
